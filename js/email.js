@@ -18,11 +18,11 @@ $(document).ready(function () {
     }, 300); // Match Tailwind's transition duration
   }
 
- 
-
   // Close modal on button click
   $("#close-modal").on("click", function () {
     hideSuccessModal();
+
+    window.location.reload()
   });
   // the form id is myForm
   // Bind form submission handler
@@ -44,10 +44,10 @@ $(document).ready(function () {
     })
       .done(function () {
         // alert("Your mail is sent!");
-         // Trigger show modal (replace this with your success condition)
-            setTimeout(() => {
-                showSuccessModal();
-            }, 1000); // Simulate email success (1 second delay)
+        // Trigger show modal (replace this with your success condition)
+        setTimeout(() => {
+          showSuccessModal();
+        }, 1000); // Simulate email success (1 second delay)
       })
       .fail(function (error) {
         alert("Oops... " + JSON.stringify(error));
