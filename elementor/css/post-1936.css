@@ -1,3 +1,7 @@
+
+:root{
+  --primary-color:#2e74d4;
+}
 .elementor-1936 .elementor-element.elementor-element-c2fce3e {
   --display: flex;
   --min-height: 100vh;
@@ -190,7 +194,7 @@
 .elementor-1936
   .elementor-element.elementor-element-d7f67b2
   .elementor-heading-title {
-  color: var(--e-global-color-30fdec4);
+  color: var(--primary-color);
   font-family: var(--e-global-typography-4c05e87-font-family), Sans-serif;
   font-size: var(--e-global-typography-4c05e87-font-size);
   font-weight: var(--e-global-typography-4c05e87-font-weight);
@@ -277,7 +281,7 @@
 }
 .elementor-1936 .elementor-element.elementor-element-1fefd34 .elementor-button {
   transition-duration: 1s;
-  box-shadow: -1px 11px 26px 4px rgba(255, 103.10869565217382, 0, 0.32);
+  box-shadow: -1px 11px 26px 4px rgba(4, 47, 95, 0.32);
 }
 .elementor-1936 .elementor-element.elementor-element-ebb3327 {
   --display: flex;
@@ -498,7 +502,7 @@
 .elementor-1936
   .elementor-element.elementor-element-275b318
   .elementor-heading-title {
-  color: #ff7d169c;
+  color: var(--primary-color);
   font-family: var(--e-global-typography-178cd85-font-family), Sans-serif;
   font-size: var(--e-global-typography-178cd85-font-size);
   font-weight: var(--e-global-typography-178cd85-font-weight);
@@ -522,8 +526,8 @@
   line-height: 1.2em;
   -webkit-text-stroke-width: 0.5px;
   stroke-width: 0.5px;
-  -webkit-text-stroke-color: #ff7d1654;
-  stroke: #ff7d1654;
+  -webkit-text-stroke-color: #1673ff79;
+  stroke: var(--primary-color);
 }
 .elementor-1936
   .elementor-element.elementor-element-8574f24
@@ -689,7 +693,7 @@ body:not(.rtl)
 }
 .elementor-1936 .elementor-element.elementor-element-b369a64 .elementor-button {
   transition-duration: 1s;
-  box-shadow: -1px 11px 26px 4px rgba(255, 103.10869565217382, 0, 0.32);
+  box-shadow: -1px 11px 26px 4px rgba(3, 30, 90, 0.32);
 }
 .elementor-1936
   .elementor-element.elementor-element-2f38b01
@@ -817,7 +821,7 @@ body:not(.rtl)
 }
 .elementor-1936 .elementor-element.elementor-element-662904a .elementor-button {
   transition-duration: 1s;
-  box-shadow: -1px 11px 26px 4px rgba(255, 103.10869565217382, 0, 0.32);
+  box-shadow: -1px 11px 26px 4px rgba(4, 47, 95, 0.32);
 }
 .elementor-1936 .elementor-element.elementor-element-2d2b3aa {
   --display: flex;
@@ -4152,7 +4156,7 @@ body:not(.rtl)
 }
 .elementor-1936 .elementor-element.elementor-element-a556fd6 .elementor-button {
   transition-duration: 1s;
-  box-shadow: -1px 11px 26px 4px rgba(255, 103.10869565217382, 0, 0.32);
+  box-shadow: -1px 11px 26px 4px rgba(4, 47, 95, 0.32);
 }
 .elementor-1936 .elementor-element.elementor-element-c10d2e1 {
   --display: flex;
