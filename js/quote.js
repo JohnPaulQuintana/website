@@ -109,7 +109,7 @@ $(document).ready(function () {
   });
 
   $('#submitBtn').click(function(event) {
-    alert('yes')
+    // alert('yes')
     event.preventDefault();  // Prevent default form submission
 
     // Collect form data
@@ -140,7 +140,7 @@ $(document).ready(function () {
         'prices': prices
       }
     };
-    console.log(data)
+    // console.log(data)
     // Send email using EmailJS API
     $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
       type: 'POST',
@@ -148,11 +148,11 @@ $(document).ready(function () {
       contentType: 'application/json'
     }).done(function() {
       console.log('Email sent successfully!');
-      alert('Quote submitted successfully!');
+      // alert('Quote submitted successfully!');
       $('#multiStepForm')[0].reset();  // Optionally reset form after submission
     }).fail(function(error) {
       console.log('Error sending email:', error);
-      alert('Error submitting quote. Please try again.');
+      // alert('Error submitting quote. Please try again.');
     });
   });
 });
