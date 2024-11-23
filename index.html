@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <!-- <link rel="profile" href="http://gmpg.org/xfn/11" /> -->
   <title>Softreg Solutions</title>
-  <meta name="robots" content="max-image-preview:large" />
-  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+  <!-- <meta name="robots" content="max-image-preview:large" /> -->
+  <!-- <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" /> -->
   <link rel="stylesheet" href="./elementor/css/style.css">
   <!-- {{-- font awesome --}} -->
   <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css" />
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
+  <!-- <script>
     window._wpemojiSettings = {
       baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
       ext: ".png",
@@ -191,8 +191,8 @@
                     : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
             }));
     })((window, document), window._wpemojiSettings);
-  </script>
-  <style id="wp-emoji-styles-inline-css">
+  </script> -->
+  <!-- <style id="wp-emoji-styles-inline-css">
     img.wp-smiley,
     img.emoji {
       display: inline !important;
@@ -205,7 +205,7 @@
       background: none !important;
       padding: 0 !important;
     }
-  </style>
+  </style> -->
   <style id="classic-theme-styles-inline-css">
     /*! This file is auto-generated */
     .wp-block-button__link {
@@ -807,17 +807,17 @@
   <script
     src="https://kfkit.rometheme.pro/beyond/wp-content/plugins/template-kit-export/assets/public/template-kit-export-public.js?ver=1.0.23"
     id="template-kit-export-js"></script>
-  <link rel="https://api.w.org/" href="https://kfkit.rometheme.pro/beyond/wp-json/" />
-  <link rel="alternate" title="JSON" type="application/json"
-    href="https://kfkit.rometheme.pro/beyond/wp-json/wp/v2/pages/1936" />
-  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kfkit.rometheme.pro/beyond/xmlrpc.php?rsd" />
-  <meta name="generator" content="WordPress 6.7" />
-  <link rel="canonical" href="https://kfkit.rometheme.pro/beyond/" />
-  <link rel="shortlink" href="https://kfkit.rometheme.pro/beyond/" />
-  <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
+  <!-- <link rel="https://api.w.org/" href="https://kfkit.rometheme.pro/beyond/wp-json/" /> -->
+  <!-- <link rel="alternate" title="JSON" type="application/json"
+    href="https://kfkit.rometheme.pro/beyond/wp-json/wp/v2/pages/1936" /> -->
+  <!-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kfkit.rometheme.pro/beyond/xmlrpc.php?rsd" /> -->
+  <!-- <meta name="generator" content="WordPress 6.7" /> -->
+  <!-- <link rel="canonical" href="https://kfkit.rometheme.pro/beyond/" /> -->
+  <!-- <link rel="shortlink" href="https://kfkit.rometheme.pro/beyond/" /> -->
+  <!-- <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
     href="https://kfkit.rometheme.pro/beyond/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkfkit.rometheme.pro%2Fbeyond%2F" />
   <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
-    href="https://kfkit.rometheme.pro/beyond/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkfkit.rometheme.pro%2Fbeyond%2F&#038;format=xml" />
+    href="https://kfkit.rometheme.pro/beyond/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkfkit.rometheme.pro%2Fbeyond%2F&#038;format=xml" /> -->
   <meta name="generator"
     content="Elementor 3.25.7; features: e_font_icon_svg, additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-swap" />
   <style>
@@ -882,95 +882,95 @@
   </style>
 
   <script src="./js/anime.min.js"></script>
-  <script src="./js/anime.es.js"></script>
+  <!-- <script src="./js/anime.es.js"></script> -->
   <script>
 
-document.addEventListener("DOMContentLoaded", function () {
-  function fitElementToParent(el, padding) {
-    var timeout = null;
-    function resize() {
-      if (timeout) clearTimeout(timeout);
-      anime.set(el, { scale: 1 });
-      var pad = padding || 0;
-      var parentEl = el.parentNode;
-      var elOffsetWidth = el.offsetWidth - pad;
-      var parentOffsetWidth = parentEl.offsetWidth;
-      var ratio = parentOffsetWidth / elOffsetWidth;
-      timeout = setTimeout(() => anime.set(el, { scale: ratio }), 10);
-    }
-    resize();
-    window.addEventListener('resize', resize);
-  }
-
-  var sphereAnimation = (function () {
-    var sphereEl = document.querySelector('.sphere-animation');
-    var spherePathEls = sphereEl.querySelectorAll('.sphere path');
-    var pathLength = spherePathEls.length;
-    var hasStarted = false;
-    var aimations = [];
-
-    fitElementToParent(sphereEl);
-
-    var breathAnimation = anime({
-      begin: function () {
-        for (var i = 0; i < pathLength; i++) {
-          aimations.push(anime({
-            targets: spherePathEls[i],
-            stroke: { value: ['rgba(75,75,255,1)', 'rgba(80,80,80,.35)'], duration: 500 },
-            // fill: { value: ['rgba(75,75,255,1)', 'rgba(80,80,80,.35)'], duration: 500 },
-            translateX: [2, -4],
-            translateY: [2, -4],
-            easing: 'easeOutQuad',
-            autoplay: false
-          }));
+    document.addEventListener("DOMContentLoaded", function () {
+      function fitElementToParent(el, padding) {
+        var timeout = null;
+        function resize() {
+          if (timeout) clearTimeout(timeout);
+          anime.set(el, { scale: 1 });
+          var pad = padding || 0;
+          var parentEl = el.parentNode;
+          var elOffsetWidth = el.offsetWidth - pad;
+          var parentOffsetWidth = parentEl.offsetWidth;
+          var ratio = parentOffsetWidth / elOffsetWidth;
+          timeout = setTimeout(() => anime.set(el, { scale: ratio }), 10);
         }
-      },
-      update: function (ins) {
-        aimations.forEach(function (animation, i) {
-          var percent = (1 - Math.sin((i * 0.35) + (0.0022 * ins.currentTime))) / 2;
-          animation.seek(animation.duration * percent);
+        resize();
+        window.addEventListener('resize', resize);
+      }
+
+      var sphereAnimation = (function () {
+        var sphereEl = document.querySelector('.sphere-animation');
+        var spherePathEls = sphereEl.querySelectorAll('.sphere path');
+        var pathLength = spherePathEls.length;
+        var hasStarted = false;
+        var aimations = [];
+
+        fitElementToParent(sphereEl);
+
+        var breathAnimation = anime({
+          begin: function () {
+            for (var i = 0; i < pathLength; i++) {
+              aimations.push(anime({
+                targets: spherePathEls[i],
+                stroke: { value: ['rgba(75,75,255,1)', 'rgba(80,80,80,.35)'], duration: 500 },
+                // fill: { value: ['rgba(75,75,255,1)', 'rgba(80,80,80,.35)'], duration: 500 },
+                translateX: [2, -4],
+                translateY: [2, -4],
+                easing: 'easeOutQuad',
+                autoplay: false
+              }));
+            }
+          },
+          update: function (ins) {
+            aimations.forEach(function (animation, i) {
+              var percent = (1 - Math.sin((i * 0.35) + (0.0022 * ins.currentTime))) / 2;
+              animation.seek(animation.duration * percent);
+            });
+          },
+          duration: Infinity,
+          autoplay: false
         });
-      },
-      duration: Infinity,
-      autoplay: false
+
+        var introAnimation = anime.timeline({
+          autoplay: false
+        })
+          .add({
+            targets: spherePathEls,
+            strokeDashoffset: {
+              value: [anime.setDashoffset, 0],
+              duration: 3900,
+              easing: 'easeInOutCirc',
+              delay: anime.stagger(190, { direction: 'reverse' })
+            },
+            duration: 2000,
+            delay: anime.stagger(60, { direction: 'reverse' }),
+            easing: 'linear'
+          }, 0);
+
+        var shadowAnimation = anime({
+          targets: '#sphereGradient',
+          x1: '25%',
+          x2: '25%',
+          y1: '0%',
+          y2: '75%',
+          duration: 30000,
+          easing: 'easeOutQuint',
+          autoplay: false
+        }, 0);
+
+        function init() {
+          introAnimation.play();
+          breathAnimation.play();
+          shadowAnimation.play();
+        }
+
+        init();
+      })();
     });
-
-    var introAnimation = anime.timeline({
-      autoplay: false
-    })
-      .add({
-        targets: spherePathEls,
-        strokeDashoffset: {
-          value: [anime.setDashoffset, 0],
-          duration: 3900,
-          easing: 'easeInOutCirc',
-          delay: anime.stagger(190, { direction: 'reverse' })
-        },
-        duration: 2000,
-        delay: anime.stagger(60, { direction: 'reverse' }),
-        easing: 'linear'
-      }, 0);
-
-    var shadowAnimation = anime({
-      targets: '#sphereGradient',
-      x1: '25%',
-      x2: '25%',
-      y1: '0%',
-      y2: '75%',
-      duration: 30000,
-      easing: 'easeOutQuint',
-      autoplay: false
-    }, 0);
-
-    function init() {
-      introAnimation.play();
-      breathAnimation.play();
-      shadowAnimation.play();
-    }
-
-    init();
-  })();
-});
 
   </script>
 </head>
@@ -978,6 +978,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <body
   class="overflow-x-hidden home page-template page-template-elementor_header_footer page page-id-1936 elementor-default elementor-template-full-width elementor-kit-4 elementor-page elementor-page-1936">
   <div id="page">
+
     <header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
       <div data-elementor-type="wp-post" data-elementor-id="1700" class="elementor elementor-1700">
         <div class="elementor-element elementor-element-9407bb7 e-flex e-con-boxed e-con e-parent" data-id="9407bb7"
@@ -1114,8 +1115,8 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>
     </header>
-
-    <div id="objects" class="w-full h-screen fixed z-0 bg-gradient-to-tr from-blue-800 from-10% via-transparent via-30% to-transparent to-90%">
+    <!-- bg-gradient-to-tr from-blue-800 from-10% via-transparent via-30% to-transparent to-90% -->
+    <div id="objects" class="w-full h-screen fixed z-0 ">
       <div class="animation-wrapper">
         <div class="sphere-animation">
           <svg class="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
@@ -1317,7 +1318,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
       </div>
-
+      <!-- end of section 1 -->
       <div class="elementor-element elementor-element-ebb3327 e-flex e-con-boxed e-con e-parent" data-id="ebb3327"
         data-element_type="container">
         <div class="e-con-inner">
@@ -1360,7 +1361,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
           <div class="elementor-element elementor-element-ecd917f elementor-widget elementor-widget-image-carousel"
             data-id="ecd917f" data-element_type="widget"
-            data-settings='{"slides_to_show":"6","slides_to_scroll":"1","navigation":"none","image_spacing_custom":{"unit":"px","size":60,"sizes":[]},"slides_to_show_tablet":"3","slides_to_show_mobile":"2","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","speed":500,"image_spacing_custom_tablet":{"unit":"px","size":"","sizes":[]},"image_spacing_custom_mobile":{"unit":"px","size":"","sizes":[]}}'
+            data-settings='{"slides_to_show":"6","slides_to_scroll":"1","navigation":"none","image_spacing_custom":{"unit":"px","size":60,"sizes":[]},"slides_to_show_tablet":"3","slides_to_show_mobile":"2","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":3000,"infinite":"yes","speed":300,"image_spacing_custom_tablet":{"unit":"px","size":"","sizes":[]},"image_spacing_custom_mobile":{"unit":"px","size":"","sizes":[]}}'
             data-widget_type="image-carousel.default">
             <div class="elementor-widget-container">
               <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
@@ -1372,27 +1373,42 @@ document.addEventListener("DOMContentLoaded", function () {
                       <span class="text-4xl">PHILIPPINES</span>
                     </figure>
                   </div>
-                  <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 6">
+                  <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 6">
                     <figure class="swiper-slide-inner flex items-center justify-center text-slate-100">
                       <!-- <svg class="swiper-slide-image size-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32L0 64 0 368 0 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-128 64.3-16.1c41.1-10.3 84.6-5.5 122.5 13.4c44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30l0-247.7c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0c-35.1-17.6-75.4-22-113.5-12.5L64 48l0-16z"/></svg> -->
                       <!-- <img decoding="async" class="swiper-slide-image" src="https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/P-7.png" alt="P-7"/> -->
                       <span class="text-4xl">USA</span>
                     </figure>
                   </div>
-                  <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 6">
+                  <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 6">
                     <figure class="swiper-slide-inner flex items-center justify-center text-slate-100">
                       <!-- <svg class="swiper-slide-image size-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32L0 64 0 368 0 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-128 64.3-16.1c41.1-10.3 84.6-5.5 122.5 13.4c44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30l0-247.7c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0c-35.1-17.6-75.4-22-113.5-12.5L64 48l0-16z"/></svg> -->
                       <!-- <img decoding="async" class="swiper-slide-image" src="https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/P-7.png" alt="P-7"/> -->
                       <span class="text-4xl">CANADA</span>
                     </figure>
                   </div>
-                  <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 6">
+                  <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 6">
                     <figure class="swiper-slide-inner flex items-center justify-center text-slate-100">
                       <!-- <svg class="swiper-slide-image size-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32L0 64 0 368 0 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-128 64.3-16.1c41.1-10.3 84.6-5.5 122.5 13.4c44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30l0-247.7c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0c-35.1-17.6-75.4-22-113.5-12.5L64 48l0-16z"/></svg> -->
                       <!-- <img decoding="async" class="swiper-slide-image" src="https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/P-7.png" alt="P-7"/> -->
                       <span class="text-4xl">UK</span>
                     </figure>
                   </div>
+                  <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 6">
+                    <figure class="swiper-slide-inner flex items-center justify-center text-slate-100">
+                      <!-- <svg class="swiper-slide-image size-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32L0 64 0 368 0 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-128 64.3-16.1c41.1-10.3 84.6-5.5 122.5 13.4c44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30l0-247.7c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0c-35.1-17.6-75.4-22-113.5-12.5L64 48l0-16z"/></svg> -->
+                      <!-- <img decoding="async" class="swiper-slide-image" src="https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/P-7.png" alt="P-7"/> -->
+                      <span class="text-4xl">Germany</span>
+                    </figure>
+                  </div>
+                  <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 6">
+                    <figure class="swiper-slide-inner flex items-center justify-center text-slate-100">
+                      <!-- <svg class="swiper-slide-image size-8" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32L0 64 0 368 0 480c0 17.7 14.3 32 32 32s32-14.3 32-32l0-128 64.3-16.1c41.1-10.3 84.6-5.5 122.5 13.4c44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30l0-247.7c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0c-35.1-17.6-75.4-22-113.5-12.5L64 48l0-16z"/></svg> -->
+                      <!-- <img decoding="async" class="swiper-slide-image" src="https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/P-7.png" alt="P-7"/> -->
+                      <span class="text-4xl">Australia</span>
+                    </figure>
+                  </div>
+
                   <!-- <div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 6">
                                             <figure class="swiper-slide-inner">
                                                 <img decoding="async" class="swiper-slide-image" src="https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/P-8.png" alt="P-8"/>
@@ -1426,6 +1442,7 @@ document.addEventListener("DOMContentLoaded", function () {
             data-element_type="container" data-settings='{"background_background":"gradient"}'></div>
         </div>
       </div>
+
       <div class="elementor-element elementor-element-93838cc e-flex e-con-boxed e-con e-parent" data-id="93838cc"
         data-element_type="container">
         <div class="e-con-inner">
@@ -1450,16 +1467,22 @@ document.addEventListener("DOMContentLoaded", function () {
               data-id="adae2ff" data-element_type="container">
               <div class="elementor-element elementor-element-275b318 elementor-widget elementor-widget-heading"
                 data-id="275b318" data-element_type="widget" data-widget_type="heading.default">
-                <div class="elementor-widget-container">
+                <div class="elementor-widget-container flex flex-col gap-2">
                   <h1 class="elementor-heading-title elementor-size-default">
                     Graphic Design
                   </h1>
+                  <h1 class="elementor-heading-title elementor-size-default" style="color: #abb8c3;">
+                    Web Solution
+                  </h1>
+                  <h1 class="elementor-heading-title elementor-size-default" style="color: #8ed1fc;">
+                    Video Production
+                  </h1>
                 </div>
               </div>
-              <div class="elementor-element elementor-element-86c6501 elementor-widget elementor-widget-heading"
+              <!-- <div class="elementor-element elementor-element-86c6501 elementor-widget elementor-widget-heading"
                 data-id="86c6501" data-element_type="widget" data-widget_type="heading.default">
                 <div class="elementor-widget-container">
-                  <h1 class="elementor-heading-title elementor-size-default">
+                  <h1 class="elementor-heading-title elementor-size-default ">
                     Web Solutions
                   </h1>
                 </div>
@@ -1471,7 +1494,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     Video Production
                   </h3>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="elementor-element elementor-element-d16b5fa e-con-full e-flex e-con e-child" data-id="d16b5fa"
@@ -1547,7 +1570,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             font-size: 1.2em;
                             text-align: left;
                           ">
-                        Founder, Head of Sofreg solutions. Information
+                        Founder, Head of Sofreg Solutions. Information
                         Technology, Software Engineer expert.
                       </h1>
                     </div>
@@ -1801,6 +1824,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
       </div>
+
       <div class="elementor-element elementor-element-c85e993 e-con-full e-flex e-con e-parent" data-id="c85e993"
         data-element_type="container">
         <div
@@ -1983,7 +2007,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
           </div>
         </div>
-        <div
+        <!-- <div
           class="elementor-element elementor-element-164efff elementor-widget__width-inherit elementor-widget elementor-widget-rkit-running_text"
           data-id="164efff" data-element_type="widget" data-widget_type="rkit-running_text.default">
           <div class="elementor-widget-container">
@@ -2062,10 +2086,11 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="elementor-element elementor-element-3407ca9 e-con-full e-flex e-con e-child" data-id="3407ca9"
           data-element_type="container" data-settings='{"background_background":"gradient"}'></div>
       </div>
+
       <div class="elementor-element elementor-element-fd59a71 e-flex e-con-boxed e-con e-parent" data-id="fd59a71"
         data-element_type="container" data-settings='{"background_background":"gradient"}'>
         <div class="e-con-inner">
@@ -2376,6 +2401,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div> -->
         </div>
       </div>
+
       <div class="elementor-element elementor-element-4fb80cd e-flex e-con-boxed e-con e-parent" data-id="4fb80cd"
         data-element_type="container" data-settings='{"background_background":"classic"}'>
         <div class="e-con-inner">
@@ -2632,7 +2658,7 @@ document.addEventListener("DOMContentLoaded", function () {
             data-id="f429652" data-element_type="widget"
             data-settings='{"_animation":"fadeInLeft","_animation_delay":300}' data-widget_type="heading.default">
             <div class="elementor-widget-container">
-              <h2 class="elementor-heading-title elementor-size-default">
+              <h2 class="elementor-heading-title elementor-size-default" style="font-size: 3em;">
                 At Sofreg, We Prioritize Your Creativity, Innovation, and Seamless Web Solutions.
               </h2>
             </div>
@@ -2687,7 +2713,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                         <div class="testimonial_description">
                           <span>Their video editing skills are unparalleled. Sofreg Solution turned raw footage into a
-                            masterpiece that captivated our audience.</span>
+                            masterpiece that captivated our audience. <br><br></span>
                         </div>
                       </div>
                       <div class="testimonial_header">
@@ -3381,6 +3407,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                 </div> -->
     </div>
+
     <footer itemscope="itemscope" itemtype="https://schema.org/WPFooter">
       <div data-elementor-type="wp-post" data-elementor-id="1701" class="elementor elementor-1701">
         <div class="elementor-element elementor-element-598a4dd e-flex e-con-boxed e-con e-parent" data-id="598a4dd"
@@ -4235,16 +4262,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   </script>
   <link rel="stylesheet" id="elementor-post-1700-css"
-    href="https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/elementor/css/post-1700.css?ver=1731510530"
+    href="./elementor/css/post-1700.css"
     media="all" />
   <link rel="stylesheet" id="elementor-post-1488-css"
-    href="https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/elementor/css/post-1488.css?ver=1731555135"
+    href="./elementor/css/post-1488.css"
     media="all" />
   <link rel="stylesheet" id="elementor-post-1701-css"
-    href="https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/elementor/css/post-1701.css?ver=1731552770"
+    href="./elementor/css/post-1701.css"
     media="all" />
   <link rel="stylesheet" id="elementor-post-1852-css"
-    href="https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/elementor/css/post-1852.css?ver=1731513950"
+    href="./elementor/css/post-1852.css"
     media="all" />
   <script
     src="https://kfkit.rometheme.pro/beyond/wp-content/plugins/rometheme-for-elementor/widgets/assets/js/offcanvas.js?ver=1.5.2"

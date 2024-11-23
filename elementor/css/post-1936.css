@@ -1434,7 +1434,7 @@ body:not(.rtl)
   --display: flex;
   --min-height: 51vh;
   --background-transition: 0.3s;
-  --margin-top: -459px;
+  --margin-top: -300px;
   --margin-bottom: 0px;
   --margin-left: 0px;
   --margin-right: 0px;
@@ -3839,7 +3839,7 @@ body:not(.rtl)
 .elementor-1936
   .elementor-element.elementor-element-477e44f
   .testimonial_quote_icon {
-  font-size: 130px;
+  font-size: 100px;
 }
 .elementor-1936
   .elementor-element.elementor-element-477e44f
@@ -4619,7 +4619,7 @@ body:not(.rtl)
   }
   .elementor-1936 .elementor-element.elementor-element-3407ca9 {
     --min-height: 46vh;
-    --margin-top: -379px;
+    --margin-top: -300px;
     --margin-bottom: 0px;
     --margin-left: 0px;
     --margin-right: 0px;
@@ -5571,7 +5571,7 @@ body:not(.rtl)
   }
   .elementor-1936 .elementor-element.elementor-element-3407ca9 {
     --min-height: 34vh;
-    --margin-top: -250px;
+    --margin-top: -200px;
     --margin-bottom: 0px;
     --margin-left: 0px;
     --margin-right: 0px;
