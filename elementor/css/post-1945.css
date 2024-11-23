@@ -1819,7 +1819,7 @@
   .elementor-element.elementor-element-2b68d5f
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer::before {
-  background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/1.jpg");
+  background-image: url("../../img/gif/4b8b5130b30706fe1ed05149009c4bd7.gif");
   --background-overlay: "";
   background-position: center center;
   background-repeat: no-repeat;
@@ -1870,7 +1870,7 @@
 }
 .elementor-1945 .elementor-element.elementor-element-0a15edd .elementor-button {
   transition-duration: 1s;
-  box-shadow: -1px 11px 26px 4px rgba(255, 103.10869565217382, 0, 0.32);
+  /* box-shadow: -1px 11px 26px 4px rgba(255, 103.10869565217382, 0, 0.32); */
 }
 .elementor-1945 .elementor-element.elementor-element-81b4d21 {
   --display: flex;
