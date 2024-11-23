@@ -96,7 +96,7 @@
   .elementor-element.elementor-element-5bdfe03
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer::before {
-  background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/futuristic-gradient-textures-6FTX28T.png");
+  /* background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/futuristic-gradient-textures-6FTX28T.png"); */
   --background-overlay: "";
   background-position: center center;
   background-repeat: no-repeat;
@@ -852,7 +852,7 @@ body:not(.rtl)
   .elementor-element.elementor-element-2d2b3aa
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  background-image: url("../../img/projects/test.png");
+  background-image: url("../../img/design/Design_Mockup.jpg");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -985,7 +985,7 @@ body:not(.rtl)
   .elementor-element.elementor-element-218d3f5
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  background-image: url("../../img/projects/test2.png");
+  background-image: url("../../img/web/Web/MOCKUPWEB.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1118,7 +1118,7 @@ body:not(.rtl)
   .elementor-element.elementor-element-1729c95
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  background-image: url("../../img/projects/test3.png");
+  background-image: url("../../img/video/VidScreenMockup.jpg");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
