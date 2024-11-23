@@ -861,10 +861,8 @@
                   <div class="rkit-navmenu-container" data-responsive="tablet">
                     <div class="rkit-hamburger rkit-hamburger-tablet">
                       <a class="rkit-btn-hamburger">
-                        <i aria-hidden="true" class="rkit-icon-open rtmicon rtmicon-grid-rounds"
-                          id="rkit-icon-open101341283"></i>
-                        <i aria-hidden="true" class="rkit-icon-close rtmicon rtmicon-xmark"
-                          id="rkit-icon-close101341283"></i>
+                        <i class="fa-solid fa-bars rkit-icon-open" id="rkit-icon-open101341283"></i>
+                        <i class="fa-solid fa-x rkit-icon-close" id="rkit-icon-close101341283"></i>
                       </a>
                     </div>
                     <div class="rkit-navmenu rkit-responsive-menu rkit-responsive-tablet rkit-navmenu-fullwidth">
@@ -2306,7 +2304,7 @@
 
         <div class="elementor-element elementor-element-9c164b2 e-flex e-con-boxed e-con e-parent" data-id="9c164b2"
           data-element_type="container" data-settings='{"background_background":"classic"}'>
-          <div class="e-con-inner">
+          <div class="e-con-inner" id="team-section">
             <div class="elementor-element elementor-element-de00437 e-con-full e-flex e-con e-child" data-id="de00437"
               data-element_type="container">
               <div class="elementor-element elementor-element-3ca1f6f e-con-full e-flex e-con e-child" data-id="3ca1f6f"
@@ -3927,7 +3925,181 @@
           </div>
         </div>
       </footer>
+
+      <!-- modal stepper -->
+    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50" id="stepModal">
+      <form action="#" method="POST" class="bg-white rounded-sm shadow-lg w-96 md:w-[60%]" id="multiStepForm">
+        <!-- Header -->
+        <div class="px-6 py-4 text-center flex justify-between items-center">
+          <span></span>
+          <span class="text-md font-bold text-[#0047ab]">Design a Quote</span>
+          <span class="font-bold text-xl text-red-500 hover:cursor-pointer hover:text-red-700 modal-close"><i
+              class="fa-solid fa-x"></i></span>
+        </div>
+
+        <!-- Body -->
+        <div class="px-6 py-4 flex items-center justify-center">
+          <!-- Step 1 -->
+          <div class="steps flex flex-col gap-4 justify-center" id="step1">
+            <h6 class="text-gray-700 text-lg font-medium">
+              Which services are you interested in?
+            </h6>
+
+            <div class="">
+              <input type="checkbox" class="w-full toggle-input hidden" name="services[]" value="GRAPHIC DESIGN" />
+              <span type="button"
+                class="w-full text-gray-700 toggle-btn font-bold border border-slate-400 p-2 text-center hover:text-blue-500 hover:bg-transparent">
+                GRAPHIC DESIGN
+              </span>
+            </div>
+            <div>
+              <input type="checkbox" class="toggle-input hidden" name="services[]" value="WEBSITE SOLUTIONS" />
+              <span type="button"
+                class="w-full toggle-btn text-gray-700 font-bold border border-slate-400 p-2 text-center hover:text-blue-500 hover:bg-transparent">
+                WEBSITE SOLUTIONS
+              </span>
+            </div>
+            <div>
+              <input type="checkbox" class="toggle-input hidden" name="services[]" value="VIDEO EDITING" />
+              <span type="button"
+                class="w-full toggle-btn text-gray-700 font-bold border border-slate-400 p-2 text-center hover:text-blue-500 hover:bg-transparent">
+                VIDEO EDITING
+              </span>
+            </div>
+            <div>
+              <input type="checkbox" class="toggle-input hidden" name="services[]" value="VIDEO EDITING" />
+              <span type="button"
+                class="w-full toggle-btn text-gray-700 font-bold border border-slate-400 p-2 text-center hover:text-blue-500 hover:bg-transparent">
+                ALL SERVICES
+              </span>
+            </div>
+            <h6 class="service-error hidden text-red-500 text-center">Please fill out this field.</h6>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="steps hidden flex flex-col gap-4 justify-center" id="step2">
+            <h6 class="text-gray-700 text-lg font-medium">
+              How do you want to work?
+            </h6>
+            <div>
+              <input type="checkbox" class="toggle-input hidden" name="interested[]" value="FULL-TIME" />
+              <span type="button"
+                class="nextBtn w-full toggle-btn text-gray-700 font-bold border border-slate-400 p-2 text-center hover:text-blue-500 hover:bg-transparent">
+                FULL-TIME
+              </span>
+            </div>
+            <div>
+              <input type="checkbox" class="toggle-input hidden" name="interested[]" value="PROJECT BASED" />
+              <span type="button"
+                class="nextBtn w-full toggle-btn text-gray-700 font-bold border border-slate-400 p-2 text-center hover:text-blue-500 hover:bg-transparent">
+                PROJECT BASED
+              </span>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="steps hidden flex flex-col gap-4 justify-center" id="step3">
+            <h6 class="text-gray-700 text-lg font-medium">
+              What is your Budget? (in USD)
+            </h6>
+            <p class="text-gray-600 mt-2">Price starts at.</p>
+            <div>
+              <input type="checkbox" class="toggle-input hidden" name="prices[]" value="2K - 5K" />
+              <span type="button"
+                class="nextBtn w-full toggle-btn text-gray-700 font-bold border border-slate-400 p-2 text-center hover:text-blue-500 hover:bg-transparent">
+                2K - 5K
+              </span>
+            </div>
+            <div>
+              <input type="checkbox" class="toggle-input hidden" name="prices[]" value="5K - 10K" />
+              <span type="button"
+                class="nextBtn w-full toggle-btn text-gray-700 font-bold border border-slate-400 p-2 text-center hover:text-blue-500 hover:bg-transparent">
+                5K - 10K
+              </span>
+            </div>
+            <div>
+              <input type="checkbox" class="toggle-input hidden" name="prices[]" value="10K" />
+              <span type="button"
+                class="nextBtn w-full toggle-btn text-gray-700 font-bold border border-slate-400 p-2 text-center hover:text-blue-500 hover:bg-transparent">
+                10K
+              </span>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="steps hidden flex flex-col gap-2 justify-center" id="step4">
+            <h6 class="text-gray-700 text-lg font-medium text-center">
+              CONTACT DETAILS
+            </h6>
+            <div>
+              <label for="name">NAME:</label>
+              <input type="text" name="name" id="" class="contact-details w-full border-0">
+            </div>
+            <div>
+              <label for="name">EMAIL:</label>
+              <input type="text" name="email" id="" class="contact-details w-full border-0">
+            </div>
+            <div>
+              <label for="name">COUNTRY:</label>
+              <input type="text" name="country" id="" class="contact-details w-full border-0">
+            </div>
+            <div>
+              <label for="name">MOBILE NUMBER/WHATSAPP NO:</label>
+              <input type="text" name="mobile_number" id="" class="contact-details w-full border-0">
+            </div>
+            <h6 class="contact-error hidden text-red-500 text-center">Please fill out this field.</h6>
+          </div>
+
+        </div>
+
+
+
+        <!-- Footer -->
+        <div class="px-6 py-4 flex justify-center gap-2">
+          <span id="prevBtn" type="button"
+            class="hidden toggle-btn text-gray-700 font-bold border-none text-center hover:text-blue-700 hover:bg-transparent">
+            Back
+          </span>
+          <!-- <span
+            type="button"
+            class="bg-gray-300 text-gray-700 px-4 rounded disabled:opacity-50"
+            id="prevBtn"
+            disabled
+          >
+            Back
+          </span> -->
+          <span id="nextBtn" type="button"
+            class="nextBtn toggle-btn text-gray-700 font-bold border-none text-center hover:text-blue-700 hover:bg-transparent">
+            Continue ->
+          </span>
+          <!-- <span
+            type="button"
+            class="bg-blue-500 text-white px-4 rounded hover:bg-blue-600"
+            id="nextBtn"
+          >
+            Continue
+          </span> -->
+          <span id="submitBtn" type="button"
+            class="submitBtn toggle-btn text-gray-700 font-bold border-none text-center hover:text-blue-700 hover:bg-transparent">
+            Submit Now ->
+          </span>
+          <!-- <a
+            type="button"
+            class="hidden submitBtn toggle-btn text-gray-700 font-bold border-none text-center hover:text-blue-700 hover:bg-transparent"
+            id="submitBtn"
+          >
+            Submit
+          </a> -->
+        </div>
+      </form>
     </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/email.js"></script>
+    <script src="./js/quote.js"></script>
+
     <!-- #page -->
     <script type="text/javascript">
       const lazyloadRunObserver = () => {
@@ -4166,6 +4338,22 @@
     </script>
     <script src="https://kfkit.rometheme.pro/beyond/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.7"
       id="elementor-frontend-js"></script>
+
+    <script>
+      $(document).ready(function(){
+        let isScroll = localStorage.getItem('scrollToTeam') || false
+
+        if (isScroll) {
+            // Clear the flag in localStorage to avoid repeated scrolling
+            localStorage.removeItem('scrollToTeam');
+
+            // Scroll to the target section
+            $('html, body').animate({
+                scrollTop: $('#team-section').offset().top
+            }, 1000); // 1000ms for smooth scrolling
+        }
+      })
+    </script>
 </body>
 
 </html>

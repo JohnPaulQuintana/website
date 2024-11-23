@@ -1736,8 +1736,8 @@
                 data-id="b369a64" data-element_type="widget" data-widget_type="button.default">
                 <div class="elementor-widget-container">
                   <div class="elementor-button-wrapper">
-                    <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink"
-                      href="/about-us.html">
+                    <a class="team-button elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink"
+                      href="#">
                       <span class="elementor-button-content-wrapper">
                         <span class="elementor-button-text">More About Us</span>
                       </span>
@@ -4641,6 +4641,17 @@
   </script>
   <script src="https://kfkit.rometheme.pro/beyond/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.7"
     id="elementor-frontend-js"></script>
+
+    <!-- setup localstorage redirect -->
+    <script>
+      $(document).ready(function(){
+        $('.team-button').click(function(){
+          // alert('yes')
+            localStorage.setItem('scrollToTeam',true)
+            window.location.href = '/about-us.html'
+        })
+      })
+    </script>
 </body>
 
 </html>
