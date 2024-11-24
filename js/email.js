@@ -31,8 +31,8 @@ $(document).ready(function () {
 
     // Gather form data
     var formData = new FormData(this);
-    formData.append("service_id", "service_msle8lo");
-    formData.append("template_id", "template_cj5swfb");
+    formData.append("service_id", "service_bgys0a8");
+    formData.append("template_id", "template_u8q6qcg");
     formData.append("user_id", "LfuKsl040TAm5S1OE");
 
     // Make AJAX request to EmailJS

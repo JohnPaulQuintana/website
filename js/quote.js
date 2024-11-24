@@ -126,9 +126,9 @@ $(document).ready(function () {
     
     // Prepare the email data for EmailJS
     var data = {
-      service_id: 'service_msle8lo',  // Replace with your EmailJS service ID
-      template_id: 'template_cj5swfb',  // Replace with your EmailJS template ID
-      user_id: 'LfuKsl040TAm5S1OE',  // Replace with your EmailJS public key
+      service_id: 'service_bgys0a8',  // Replace with your EmailJS service ID
+      template_id: 'template_21fyy28',  // Replace with your EmailJS template ID
+      user_id: '2NyHEnshLP21eIwYA',  // Replace with your EmailJS public key
       template_params: {
         'from_name': name,
         'email_id': email,
