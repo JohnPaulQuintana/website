@@ -8,135 +8,7 @@
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="https://kfkit.rometheme.pro/beyond/xmlrpc.php" />
     <title>Softreg Solutions</title>
-    <!-- <meta name='robots' content='max-image-preview:large'/> -->
-    <!-- <link rel='dns-prefetch' href='//cdnjs.cloudflare.com'/> -->
-    <!-- <link rel="alternate" type="application/rss+xml" title="Beyond &raquo; Feed" href="https://kfkit.rometheme.pro/beyond/feed/"/> -->
-    <!-- <link rel="alternate" type="application/rss+xml" title="Beyond &raquo; Comments Feed" href="https://kfkit.rometheme.pro/beyond/comments/feed/"/> -->
-    <!-- <script>
-            window._wpemojiSettings = {
-                "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
-                "ext": ".png",
-                "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
-                "svgExt": ".svg",
-                "source": {
-                    "concatemoji": "https:\/\/kfkit.rometheme.pro\/beyond\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7"
-                }
-            };
-            /*! This file is auto-generated */
-            !function(i, n) {
-                var o, s, e;
-                function c(e) {
-                    try {
-                        var t = {
-                            supportTests: e,
-                            timestamp: (new Date).valueOf()
-                        };
-                        sessionStorage.setItem(o, JSON.stringify(t))
-                    } catch (e) {}
-                }
-                function p(e, t, n) {
-                    e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(t, 0, 0);
-                    var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)
-                      , r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-                    e.fillText(n, 0, 0),
-                    new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
-                    return t.every(function(e, t) {
-                        return e === r[t]
-                    })
-                }
-                function u(e, t, n) {
-                    switch (t) {
-                    case "flag":
-                        return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
-                    case "emoji":
-                        return !n(e, "\ud83d\udc26\u200d\u2b1b", "\ud83d\udc26\u200b\u2b1b")
-                    }
-                    return !1
-                }
-                function f(e, t, n) {
-                    var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300,150) : i.createElement("canvas")
-                      , a = r.getContext("2d", {
-                        willReadFrequently: !0
-                    })
-                      , o = (a.textBaseline = "top",
-                    a.font = "600 32px Arial",
-                    {});
-                    return e.forEach(function(e) {
-                        o[e] = t(a, e, n)
-                    }),
-                    o
-                }
-                function t(e) {
-                    var t = i.createElement("script");
-                    t.src = e,
-                    t.defer = !0,
-                    i.head.appendChild(t)
-                }
-                "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports",
-                s = ["flag", "emoji"],
-                n.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                },
-                e = new Promise(function(e) {
-                    i.addEventListener("DOMContentLoaded", e, {
-                        once: !0
-                    })
-                }
-                ),
-                new Promise(function(t) {
-                    var n = function() {
-                        try {
-                            var e = JSON.parse(sessionStorage.getItem(o));
-                            if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests)
-                                return e.supportTests
-                        } catch (e) {}
-                        return null
-                    }();
-                    if (!n) {
-                        if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob)
-                            try {
-                                var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));"
-                                  , r = new Blob([e],{
-                                    type: "text/javascript"
-                                })
-                                  , a = new Worker(URL.createObjectURL(r),{
-                                    name: "wpTestEmojiSupports"
-                                });
-                                return void (a.onmessage = function(e) {
-                                    c(n = e.data),
-                                    a.terminate(),
-                                    t(n)
-                                }
-                                )
-                            } catch (e) {}
-                        c(n = f(s, u, p))
-                    }
-                    t(n)
-                }
-                ).then(function(e) {
-                    for (var t in e)
-                        n.supports[t] = e[t],
-                        n.supports.everything = n.supports.everything && n.supports[t],
-                        "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]);
-                    n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag,
-                    n.DOMReady = !1,
-                    n.readyCallback = function() {
-                        n.DOMReady = !0
-                    }
-                }).then(function() {
-                    return e
-                }).then(function() {
-                    var e;
-                    n.supports.everything || (n.readyCallback(),
-                    (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji),
-                    t(e.wpemoji)))
-                }))
-            }((window,
-            document), window._wpemojiSettings);
-        </script> -->
-
+    <link rel="stylesheet" href="./elementor/css/style.css">
     <!-- {{-- font awesome --}} -->
     <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
         href="/css/app-wa-462d1fe84b879d730fe2180b0e0354e0.css?vsn=d" />
@@ -908,7 +780,7 @@
                 <div class="e-con-inner">
                     <div class="elementor-element elementor-element-5a5dd36 elementor-widget__width-inherit elementor-widget elementor-widget-heading"
                         data-id="5a5dd36" data-element_type="widget" data-widget_type="heading.default">
-                        <div class="elementor-widget-container">
+                        <div class="hidden-element elementor-widget-container">
                             <h1 class="elementor-heading-title elementor-size-default">
                                 Graphic Design
                             </h1>
@@ -917,7 +789,7 @@
                     <div class="elementor-element elementor-element-29f70f0 elementor-widget elementor-widget-text-editor"
                         data-id="29f70f0" data-element_type="widget" data-widget_type="text-editor.default">
                         <div class="elementor-widget-container">
-                            <p>
+                            <p class="hidden-element">
                                 <a href="/services.html">Services</a>
                                 / Graphic Design
                             </p>
@@ -941,7 +813,7 @@
                             data-settings='{"background_background":"gradient"}'></div>
                         <div class="elementor-element elementor-element-25609ef elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
                             data-id="25609ef" data-element_type="widget" data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
+                            <div class="hidden-element elementor-widget-container">
                                 <h2 class="elementor-heading-title elementor-size-default">
                                     Completed Designed
                                 </h2>
@@ -951,10 +823,10 @@
                     <div class="elementor-element elementor-element-69220ad elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-heading"
                         data-id="69220ad" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">
+                            <h2 class="hidden-element elementor-heading-title elementor-size-default">
                                 Graphic Design
                             </h2>
-                            <p>
+                            <p class="hidden-element">
                                 Transform your ideas into visually stunning designs that leave
                                 a lasting impression. We specialize in creating impactful and
                                 innovative visuals tailored to your brand.
@@ -966,93 +838,94 @@
                         <!-- Image 1 -->
                         <div
                             class="w-fit flex flex-col gap-2 relative hover:transform hover:translate-y-[-10px] transition-all duration-300">
-                            <span class="text-2xl text-white">UI/UX Design</span>
-                            <div class="overflow-hidden rounded-md">
+                            <span class="hidden-element text-2xl text-white">UI/UX Design</span>
+                            <div class="hidden-element overflow-hidden rounded-md">
                                 <!-- Wrapping div to preserve the rounded corners -->
                                 <img class="w-full h-full object-cover" src="./img/web/Web/THUMBNAIL.jpg" alt="" />
                             </div>
-                            <p>Design user-friendly interfaces and experiences for websites and apps.</p>
+                            <p class="hidden-element">Design user-friendly interfaces and experiences for websites and apps.</p>
                             <!-- Label on the top-left corner -->
                             <div
-                                class="absolute top-14 left-2 bg-black/40 text-white px-3 py-1 rounded-md backdrop-blur-sm">
+                                class="hidden-element absolute top-14 left-2 bg-black/40 text-white px-3 py-1 rounded-md backdrop-blur-sm">
                                 Featured
                             </div>
                         </div>
                         <!-- Image 1 -->
                         <div
                             class="w-fit flex flex-col gap-2 relative hover:transform hover:translate-y-[-10px] transition-all duration-300">
-                            <span class="text-2xl text-white">UI/UX Design</span>
-                            <div class="overflow-hidden rounded-md">
+                            <span class="hidden-element text-2xl text-white">UI/UX Design</span>
+                            <div class="hidden-element overflow-hidden rounded-md">
                                 <!-- Wrapping div to preserve the rounded corners -->
                                 <img class="w-full h-full object-cover" src="./img/web/Web/THUMBNAIL.jpg" alt="" />
                             </div>
-                            <p>Design user-friendly interfaces and experiences for websites and apps.</p>
+                            <p class="hidden-element">Design user-friendly interfaces and experiences for websites and apps.</p>
                             <!-- Label on the top-left corner -->
                             <div
-                                class="absolute top-14 left-2 bg-black/40 text-white px-3 py-1 rounded-md backdrop-blur-sm">
+                                class="hidden-element absolute top-14 left-2 bg-black/40 text-white px-3 py-1 rounded-md backdrop-blur-sm">
                                 Featured
                             </div>
                         </div>
                         <!-- Image 1 -->
                         <div
                             class="w-fit flex flex-col gap-2 relative hover:transform hover:translate-y-[-10px] transition-all duration-300">
-                            <span class="text-2xl text-white">UI/UX Design</span>
-                            <div class="overflow-hidden rounded-md">
+                            <span class="hidden-element text-2xl text-white">UI/UX Design</span>
+                            <div class="hidden-element overflow-hidden rounded-md">
                                 <!-- Wrapping div to preserve the rounded corners -->
                                 <img class="w-full h-full object-cover" src="./img/web/Web/THUMBNAIL.jpg" alt="" />
                             </div>
-                            <p>Design user-friendly interfaces and experiences for websites and apps.</p>
+                            <p class="hidden-element">Design user-friendly interfaces and experiences for websites and apps.</p>
                             <!-- Label on the top-left corner -->
                             <div
-                                class="absolute top-14 left-2 bg-black/40 text-white px-3 py-1 rounded-md backdrop-blur-sm">
+                                class="hidden-element absolute top-14 left-2 bg-black/40 text-white px-3 py-1 rounded-md backdrop-blur-sm">
                                 Featured
                             </div>
                         </div>
                         <!-- Image 1 -->
                         <div
                             class="w-fit flex flex-col gap-2 relative hover:transform hover:translate-y-[-10px] transition-all duration-300">
-                            <span class="text-2xl text-white">UI/UX Design</span>
-                            <div class="overflow-hidden rounded-md">
+                            <span class="hidden-element text-2xl text-white">UI/UX Design</span>
+                            <div class="hidden-element overflow-hidden rounded-md">
                                 <!-- Wrapping div to preserve the rounded corners -->
                                 <img class="w-full h-full object-cover" src="./img/web/Web/THUMBNAIL.jpg" alt="" />
                             </div>
-                            <p>Design user-friendly interfaces and experiences for websites and apps.</p>
+                            <p class="hidden-element">Design user-friendly interfaces and experiences for websites and apps.</p>
                             <!-- Label on the top-left corner -->
                             <div
-                                class="absolute top-14 left-2 bg-black/40 text-white px-3 py-1 rounded-md backdrop-blur-sm">
+                                class="hidden-element absolute top-14 left-2 bg-black/40 text-white px-3 py-1 rounded-md backdrop-blur-sm">
                                 Featured
                             </div>
                         </div>
                         <!-- Image 1 -->
                         <div
                             class="w-fit flex flex-col gap-2 relative hover:transform hover:translate-y-[-10px] transition-all duration-300">
-                            <span class="text-2xl text-white">UI/UX Design</span>
-                            <div class="overflow-hidden rounded-md">
+                            <span class="hidden-element text-2xl text-white">UI/UX Design</span>
+                            <div class="hidden-element overflow-hidden rounded-md">
                                 <!-- Wrapping div to preserve the rounded corners -->
                                 <img class="w-full h-full object-cover" src="./img/web/Web/THUMBNAIL.jpg" alt="" />
                             </div>
-                            <p>Design user-friendly interfaces and experiences for websites and apps.</p>
+                            <p class="hidden-element">Design user-friendly interfaces and experiences for websites and apps.</p>
                             <!-- Label on the top-left corner -->
                             <div
-                                class="absolute top-14 left-2 bg-black/40 text-white px-3 py-1 rounded-md backdrop-blur-sm">
+                                class="hidden-element absolute top-14 left-2 bg-black/40 text-white px-3 py-1 rounded-md backdrop-blur-sm">
                                 Featured
                             </div>
                         </div>
                         <!-- Image 1 -->
                         <div
                             class="w-fit flex flex-col gap-2 relative hover:transform hover:translate-y-[-10px] transition-all duration-300">
-                            <span class="text-2xl text-white">UI/UX Design</span>
-                            <div class="overflow-hidden rounded-md">
+                            <span class="hidden-element text-2xl text-white">UI/UX Design</span>
+                            <div class="hidden-element overflow-hidden rounded-md">
                                 <!-- Wrapping div to preserve the rounded corners -->
                                 <img class="w-full h-full object-cover" src="./img/web/Web/THUMBNAIL.jpg" alt="" />
                             </div>
-                            <p>Design user-friendly interfaces and experiences for websites and apps.</p>
+                            <p class="hidden-element">Design user-friendly interfaces and experiences for websites and apps.</p>
                             <!-- Label on the top-left corner -->
                             <div
-                                class="absolute top-14 left-2 bg-black/40 text-white px-3 py-1 rounded-md backdrop-blur-sm">
+                                class="hidden-element absolute top-14 left-2 bg-black/40 text-white px-3 py-1 rounded-md backdrop-blur-sm">
                                 Featured
                             </div>
                         </div>
+                        
 
 
                     </div>
@@ -1519,6 +1392,7 @@
     </script>
     <script src="https://kfkit.rometheme.pro/beyond/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.7"
         id="elementor-frontend-js"></script>
+        <script src="./js/scroll.js"></script>
 </body>
 
 </html>
