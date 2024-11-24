@@ -1819,11 +1819,11 @@
   .elementor-element.elementor-element-2b68d5f
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer::before {
-  background-image: url("../../img/gif/4b8b5130b30706fe1ed05149009c4bd7.gif");
+  background-image: url("../../img/gif/rb_1597.png");
   --background-overlay: "";
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .elementor-1945 .elementor-element.elementor-element-2b68d5f,
 .elementor-1945 .elementor-element.elementor-element-2b68d5f::before {
