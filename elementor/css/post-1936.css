@@ -1622,7 +1622,7 @@ body:not(.rtl)
   .elementor-element.elementor-element-da875ec
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer::before {
-  background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/Icon-4-Bold.png");
+  /* background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/Icon-4-Bold.png"); */
   --background-overlay: "";
   background-position: 225px 360px;
   background-repeat: no-repeat;
@@ -1643,7 +1643,7 @@ body:not(.rtl)
   .elementor-element.elementor-element-da875ec
   > .e-con-inner
   > .elementor-background-slideshow:hover::before {
-  background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/Icon-4-Bold.png");
+  /* background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/Icon-4-Bold.png"); */
   --background-overlay: "";
   background-position: 215px 175px;
   background-repeat: no-repeat;
@@ -1818,7 +1818,7 @@ body:not(.rtl)
   .elementor-element.elementor-element-cf2b507
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer::before {
-  background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/Icon-2-Bold.png");
+  /* background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/Icon-2-Bold.png"); */
   --background-overlay: "";
   background-position: 225px 360px;
   background-repeat: no-repeat;
@@ -1839,7 +1839,7 @@ body:not(.rtl)
   .elementor-element.elementor-element-cf2b507
   > .e-con-inner
   > .elementor-background-slideshow:hover::before {
-  background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/Icon-2-Bold.png");
+  /* background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/Icon-2-Bold.png"); */
   --background-overlay: "";
   background-position: 215px 175px;
   background-repeat: no-repeat;
@@ -2014,7 +2014,7 @@ body:not(.rtl)
   .elementor-element.elementor-element-b3bb549
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer::before {
-  background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/Icon-3-Bold.png");
+  /* background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/Icon-3-Bold.png"); */
   --background-overlay: "";
   background-position: 225px 360px;
   background-repeat: no-repeat;
@@ -2035,7 +2035,7 @@ body:not(.rtl)
   .elementor-element.elementor-element-b3bb549
   > .e-con-inner
   > .elementor-background-slideshow:hover::before {
-  background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/Icon-3-Bold.png");
+  /* background-image: url("https://kfkit.rometheme.pro/beyond/wp-content/uploads/sites/84/2024/06/Icon-3-Bold.png"); */
   --background-overlay: "";
   background-position: 215px 175px;
   background-repeat: no-repeat;
